@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:jee="http://www.springframework.org/schema/jee" xmlns:util="http://www.springframework.org/schema/util"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean class="mx.com.cinepolis.scheduler.service.impl.EmailSenderEJBImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.HttpServiceEJBImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.EngineDbServiceImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.ParametersServiceImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.PropertiesServiceEJBImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.ScheduleServiceImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.ReporteServiceImpl" />
+
+    <bean class="mx.com.cinepolis.scheduler.service.impl.UserServiceImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.CatalogServiceImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.SecurityServiceEJBImpl" />
+    <bean class="mx.com.cinepolis.scheduler.service.impl.CommentServiceImpl" />
+
+    <bean class="mx.com.cinepolis.scheduler.facade.CatalogFacadeEJB" />
+    <bean class="mx.com.cinepolis.scheduler.facade.EngineDbFacadeEJB" />
+    <bean class="mx.com.cinepolis.scheduler.facade.ScheduleFacadeEJB" />
+    <bean class="mx.com.cinepolis.scheduler.facade.SecurityFacadeEJB" />
+    <bean class="mx.com.cinepolis.scheduler.facade.UserFacadeEJB" />
+    <bean class="mx.com.cinepolis.scheduler.facade.ReporteFacadeEJB" />
+    <bean class="mx.com.cinepolis.scheduler.facade.CommentFacadeEJB" />
+
+</beans>
+

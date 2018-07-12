@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.AssignSeatsDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.ConnectionDataDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.FunctionDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.ParametersDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.ProfileDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.PropertiesDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.PropertiesDefaultDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.RegionDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.SchedulerStatusDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.ScreenDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.SessionStatusDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.TheaterDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.TimeZoneDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.UserDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.CommentDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+    <bean class="mx.com.cinepolis.scheduler.data.persistence.dao.impl.FunctionBeforeDAOImpl">
+        <property name="entityManager">
+            <bean class="org.springframework.orm.jpa.support.SharedEntityManagerBean">
+                <property name="entityManagerFactory" ref="entityManagerFactory"/>
+            </bean>
+        </property>
+    </bean>
+
+</beans>          
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="SchedulePU" transaction-type="JTA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <jta-data-source>jdbc/javaee</jta-data-source>
+        <class>com.axity.arquitectura.javaee.prototype.model.CustomerDO</class>
+        <class>com.axity.arquitectura.javaee.prototype.model.ProductoDO</class>
+        <class>com.axity.arquitectura.javaee.prototype.model.OrderDO</class>
+        <class>com.axity.arquitectura.javaee.prototype.model.OrderlineDO</class>
+
+        <properties>
+            <property name="eclipselink.logging.level" value="FINE" />
+            <property name="eclipselink.logging.level.sql" value="FINE" />
+            <property name="eclipselink.logging.parameters" value="true" />
+            <property name="eclipselink.logging.logger" value="ServerLogger" />
+            <property name="eclipselink.cache.shared.default" value="false"/>
+            <property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+            <property name="eclipselink.jdbc.batch-writing.size" value="5000"/>
+        </properties>
+
+        <shared-cache-mode>NONE</shared-cache-mode>
+
+    </persistence-unit>
+</persistence>
