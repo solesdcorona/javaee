@@ -10,7 +10,7 @@ import javax.persistence.PersistenceUnit;
 
 public class CustomerDAOImpl extends BaseDAOImpl<CustomerDO, Long> implements CustomerDAO{
 
-    @PersistenceContext
+
     @Override
     public void setEntityManager(EntityManager entityManager) {
         super.setEntityManager(entityManager);
