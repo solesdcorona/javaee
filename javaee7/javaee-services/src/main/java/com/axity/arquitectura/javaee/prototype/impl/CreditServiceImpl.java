@@ -6,6 +6,7 @@ import com.axity.arquitectura.javaee.prototype.to.CreditoTO;
 import com.axity.arquitectura.prototype.persistence.compras.CustomerDAO;
 
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -17,6 +18,7 @@ public class CreditServiceImpl implements CreditService{
 
 
     @Override
+    @Transactional
     public List<CreditoTO> findAllCredit() {
 
         CustomerDO customer= new CustomerDO();
