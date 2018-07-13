@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
 <resources>
+    <jdbc-resource
+            enabled="true"
+            jndi-name="java:app/jdbc/javaee"
+            pool-name="sparrow_pool"/>
+
     <jdbc-connection-pool
             name="sparrow_pool"
             datasource-classname="oracle.jdbc.pool.OracleDataSource"
@@ -10,10 +15,5 @@
         <property name="password" value="such5283"/>
     </jdbc-connection-pool>
 
-    <jdbc-resource
-            enabled="true"
-            jndi-name="jdbc/javaee"
-            object-type="user"
-            pool-name="sparrow_pool"/>
 
 </resources>
